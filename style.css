@@ -1,0 +1,186 @@
+
+@font-face{        /* Has to be in the same folder as css code to work  */ 
+    src: url(fonts/BungeeInline-Regular.ttf);
+    font-family:Bungee;
+}
+
+li{
+
+    color: black;
+}
+
+body{
+    margin:auto 0;
+    }
+
+img{
+        border-radius:15px;
+    }
+
+iframe{
+    border-radius:15px;
+}
+
+a:link {
+    font-family: 'Maven Pro', sans-serif; 
+    color: black;  /*Don't know why but in Avast Secure Browser it becomes blue */
+   
+}
+
+a:hover {
+    color: blue;
+    font-size: 1.2em;
+    }
+
+.headContainer{
+    display:flex;
+    position : fixed;   /*stays in the same place even if the page is scrolled */
+    background-image: linear-gradient(to right, rgb(178, 155, 221), white , rgb(153, 147, 233));
+    height: 80px;
+    align-items:center;    /*set the alignment of secondary axis (y) */ 
+    Z-index: 2;              /* everything hides behinder the header   */
+    top:0px;                /* so it is fixed to the sides of the page  */
+    left:0;
+    right:0;
+    justify-content: space-between;
+    width:100%;
+    border-radius:5px;               
+}
+
+.mainHead{
+    text-align: center;
+    color: black;
+    text-decoration-line: underline;
+    font-family: Bungee;
+    font-size:1.7em;
+    text-emphasis-color: white;  
+}
+
+.main-nav{
+    display:flex;
+    list-style:none;
+    font-size:1em;
+    width:130px;
+    margin:5px;
+}
+
+.link{
+    font-size:1.2em;
+    margin-right: 10px;
+}
+
+.introduction{
+    background: white;
+    grid-column: 1/1;       /* the number depends on grid-template columns having 3 columns means there are 4 lines for the entire line */
+    font-size: 20px;
+    margin-top: 80px;    /* because of header   */
+    padding-right: 50px;
+    border-radius:1em;
+    text-align: center;
+    padding: 2em;
+    font-family: 'Maven Pro', sans-serif;  
+}
+
+.grid{
+    background:white;
+    display:grid;
+    grid-column: 0/0;  
+    grid-template-columns: repeat(auto-fill, minmax(1000px , 1fr));
+    grid-row: 0/0;
+    gap:5em;
+    justify-items: center;     /* start,center,end x axis  */
+    align-items:center;    /* start,center,end y axis strech=default  */
+    margin-left:4%;
+    font-size: 1.2em;
+    margin-bottom:120px;  /* because of footer   */
+ 
+
+}
+
+.image{
+    border-radius:5px;
+}
+
+
+.footer{
+    display:flex;
+    position : fixed;   /*stays in the same place even if the page is scrolled */
+    background-image: linear-gradient(to right, rgb(178, 155, 221), white , rgb(153, 147, 233));
+    justify-content: flex-start;   /*set the alignment of primary axis (x) */ 
+    height: 100px;
+    align-items:flex-start;    /*set the alignment of secondary axis (y) */ 
+    flex-direction:column;
+    font-family: 'Maven Pro', sans-serif;   /*links are from index.html */ 
+    bottom:0px;                /* so it is fixed to the sides of the page  */
+    left:0;
+    right:0;
+    width:100%;
+    border-radius:5px;
+}
+
+
+.aboutMe{
+    color: black;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+
+}
+
+.aboutMeInfo{
+    margin-top: 5px;
+    color: black;
+    padding-left: 10px;
+   
+}
+
+#red{
+    color: red;
+}
+
+
+@viewport {
+  width: 100vw; /*Sets the width of the actual viewport to the device width*/
+}
+
+@media(max-width:550px){      /*Reponsive design for smaller tablet and large smartphones   */
+    
+    img{
+        width: 480px;
+        height: 400px;
+    }
+
+    iframe{
+        width: 480px;
+        height: 400px;
+    }
+    
+    .footer{
+
+        height:120px;
+    }
+
+    .introduction{
+        font-size:.6em; 
+
+    }
+
+    .mainHead{
+        font-size:1.0em;
+    }
+
+    .link{
+        font-size:1.0em;
+    }
+
+
+    .aboutMe{
+
+        font-size:.9em; 
+    }
+
+    .aboutMeInfo{
+
+        font-size:.8em; 
+    }
+}
