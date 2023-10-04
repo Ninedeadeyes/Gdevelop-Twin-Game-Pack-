@@ -138,6 +138,10 @@ a:hover {
     color: red;
 }
 
+#positioning{
+    margin-left:75px;
+}
+
 
 @viewport {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
