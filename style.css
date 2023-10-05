@@ -69,13 +69,7 @@ a:hover {
     margin-right: 10px;
 }
 
-.introduction{
-    background: white;
-    grid-column: 1/1;       /* the number depends on grid-template columns having 3 columns means there are 4 lines for the entire line */
-    font-size: 20px;
-    margin-top: 80px;    /* because of header   */
-    padding-right: 50px;
-    border-radius:1em;
+.descript{
     text-align: center;
     padding: 2em;
     font-family: 'Maven Pro', sans-serif;  
@@ -97,6 +91,10 @@ a:hover {
 
 }
 
+.introduction{
+    margin-top: 80px;    /* because of header   */
+
+}
 .image{
     border-radius:5px;
 }
@@ -147,30 +145,29 @@ a:hover {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
 }
 
-@media(max-width:550px){      /*Reponsive design for smaller tablet and large smartphones   */
+@media(max-width:800px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
-        width: 480px;
-        height: 400px;
+        width: 380px;
+        height: 300px;
     }
 
     iframe{
-        width: 480px;
-        height: 400px;
+        width: 380px;
+        height: 300px;
     }
     
     .footer{
-
         height:120px;
     }
 
     .introduction{
         font-size:.6em; 
-
     }
 
     .mainHead{
-        font-size:1.0em;
+        width:130px;
+        font-size:.8em;
     }
 
     .link{
@@ -187,4 +184,22 @@ a:hover {
 
         font-size:.8em; 
     }
+
+    .grid{
+
+        justify-items:left;     /* start,center,end x axis  */
+        align-items:center;    /* start,center,end y axis strech=default  */
+    }
+
+    #positioning{
+        margin-left:70px;
+    
+    }
+    .descript{
+
+        font-size:.8em;
+
+
+    }
+
 }
