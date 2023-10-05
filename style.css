@@ -53,7 +53,7 @@ a:hover {
     color: black;
     text-decoration-line: underline;
     font-family: Bungee;
-    font-size:1.7em;
+    font-size:1.2em;
     text-emphasis-color: white;  
 }
 
@@ -213,6 +213,10 @@ a:hover {
         width: 380px;
         height: 300px;
     }
+
+    .mainHead{
+        font-size:1em;
+    }
     
 }
 
@@ -227,6 +231,17 @@ a:hover {
     iframe{
         width: 280px;
         height: 200px;
+    }
+
+
+    .mainHead{
+        font-size:.8em;
+    }
+
+    li{
+
+        color: black;
+        font-size:.8em;
     }
     
 }
