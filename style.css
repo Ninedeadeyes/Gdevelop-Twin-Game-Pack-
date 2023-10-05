@@ -144,7 +144,7 @@ a:hover {
 
 
 #positioning{
-    margin-left:250px;
+    margin-left:50px;
 }
 
 
@@ -152,18 +152,13 @@ a:hover {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
 }
 
-@media(max-width:550px){      /*Reponsive design for smaller tablet and large smartphones   */
+@media(max-width:850px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
         width: 480px;
         height: 400px;
     }
 
-    iframe{
-        width: 480px;
-        height: 400px;
-    }
-    
     .footer{
 
         height:120px;
@@ -192,4 +187,30 @@ a:hover {
 
         font-size:.8em; 
     }
+
+
+    .grid{
+
+        justify-items: left;     /* start,center,end x axis  */
+        align-items:left;    /* start,center,end y axis strech=default  */
+        font-size: .8em;
+        margin-left:8%;
+
+    }
+
+}
+
+
+@media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
+    
+    img{
+        width: 380px;
+        height: 300px;
+    }
+
+    iframe{
+        width: 380px;
+        height: 300px;
+    }
+    
 }
