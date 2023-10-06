@@ -4,40 +4,38 @@
     font-family:Bungee;
 }
 
-li{
+p {
+    font-family:serif;
 
-    color: black;
 }
 
 body{
     margin:auto 0;
-
     }
 
-
 img{
-
-        width: 800px;
-        height: 500px;
         border-radius:15px;
     }
 
+iframe{
+    border-radius:15px;
+}
 
 a:link {
-    font-family: 'Maven Pro', sans-serif; 
-    color: black;  /*Don't know why but in Avast Secure Browser it becomes blue */
+    font-family: 'Maven Pro', sans-serif;  
    
 }
 
 a:hover {
-    color: blue;
     font-size: 1.2em;
+    color: red;
     }
 
+    
 .headContainer{
     display:flex;
     position : fixed;   /*stays in the same place even if the page is scrolled */
-    background-image: linear-gradient(to right, rgb(178, 155, 221), white , rgb(153, 147, 233));
+    background-image: linear-gradient(to right, rgb(246, 218, 218), white , rgb(246, 218, 218));
     height: 80px;
     align-items:center;    /*set the alignment of secondary axis (y) */ 
     Z-index: 2;              /* everything hides behinder the header   */
@@ -46,7 +44,7 @@ a:hover {
     right:0;
     justify-content: space-between;
     width:100%;
-    border-radius:5px;               
+    border-radius:5px;            
 }
 
 .mainHead{
@@ -54,8 +52,9 @@ a:hover {
     color: black;
     text-decoration-line: underline;
     font-family: Bungee;
-    font-size:1.2em;
+    font-size:1.7em;
     text-emphasis-color: white;  
+    margin-left:10px;
 }
 
 .main-nav{
@@ -66,32 +65,34 @@ a:hover {
     margin:5px;
 }
 
+
+
 .link{
     font-size:1.2em;
     margin-right: 10px;
+    color:rgb(93, 55, 121);  /*Don't know why but in Avast Secure Browser it becomes blue */
 }
 
 .introduction{
     background: white;
-    grid-column: 1/1;       /* the number depends on grid-template columns having 3 columns means there are 4 lines for the entire line */
+    grid-column: 1/4;       /* the number depends on grid-template columns having 3 columns means there are 4 lines for the entire line */
     font-size: 20px;
     margin-top: 80px;    /* because of header   */
-    padding-right: 50px;
     border-radius:1em;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     font-family: 'Maven Pro', sans-serif;  
+    
 }
 
 .grid{
     background:white;
     display:grid;
-    grid-column: 0/0;  
-    grid-template-columns: repeat(auto-fill, minmax(1000px , 1fr));
-    grid-row: 0/0;
+    grid-template-columns: repeat(auto-fill, minmax(400px , 1fr));
+    grid-auto-rows: minmax(10px,auto); 
     gap:5em;
-    justify-items: center;     /* start,center,end x axis  */
-    align-items:center;    /* start,center,end y axis strech=default  */
+    justify-items: stretch;     /* start,center,end x axis  */
+    align-items:stretch;    /* start,center,end y axis strech=default  */
     margin-left:4%;
     font-size: 1.2em;
     margin-bottom:120px;  /* because of footer   */
@@ -107,7 +108,7 @@ a:hover {
 .footer{
     display:flex;
     position : fixed;   /*stays in the same place even if the page is scrolled */
-    background-image: linear-gradient(to right, rgb(178, 155, 221), white , rgb(153, 147, 233));
+    background-image: linear-gradient(to right, rgb(246, 218, 218), white , rgb(246, 218, 218));
     justify-content: flex-start;   /*set the alignment of primary axis (x) */ 
     height: 100px;
     align-items:flex-start;    /*set the alignment of secondary axis (y) */ 
@@ -125,7 +126,8 @@ a:hover {
     color: black;
     height: 30px;
     padding-left: 10px;
-    font-size: 15px;
+    font-family: 'Maven Pro', sans-serif; 
+    font: bold;
 
 }
 
@@ -133,29 +135,26 @@ a:hover {
     margin-top: 5px;
     color: black;
     padding-left: 10px;
+    font-family: 'Maven Pro', sans-serif; 
    
 }
 
-#red{
-    color: red;
-}
 
 #black{
     color: black;
 }
 
+#brown {
+    color: brown;
+}
 
 #positioning{
-    margin-left:50px;
+    margin-left:5px;
 }
 
 #edit{
-    display: flex;
-    justify-content: center;
-    font-family: Cambria;
-    font-style:bold;
 
-    
+    font-size: 1em;
 
 }
 
@@ -164,15 +163,29 @@ a:hover {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
 }
 
-@media(max-width:850px){      /*Reponsive design for smaller tablet and large smartphones   */
-    .grid{
-        margin-left:3%;
-    }
+
+@media(max-width:1000px){      /*Reponsive design for smaller tablet and large smartphones   */
+    
+
+    #positioning{
+        
+        margin-left:120px;
+        }
+
+}
+
+@media(max-width:650px){      /*Reponsive design for smaller tablet and large smartphones   */
+    
     img{
-        width: 640px;
+        width: 480px;
         height: 400px;
     }
 
+    .link{
+        font-size:.8em;
+    }
+
+    
     .footer{
 
         height:120px;
@@ -180,15 +193,11 @@ a:hover {
 
     .introduction{
         font-size:.6em; 
-
+    
     }
 
     .mainHead{
-        font-size:1.0em;
-    }
-
-    .link{
-        font-size:1.0em;
+        font-size:.8em;
     }
 
 
@@ -202,76 +211,69 @@ a:hover {
         font-size:.8em; 
     }
 
+    #positioning{
+        
+        margin-left:160px;
+        }
 
-    .grid{
-
-        justify-items: left;     /* start,center,end x axis  */
-        align-items:left;    /* start,center,end y axis strech=default  */
-        font-size: .8em;
-        margin-left:8%;
-
-    }
 
 }
 
 
-@media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
+@media(max-width:480px){      /*Reponsive design for smaller tablet and large smartphones   */
+
+    #edit{
+
+        font-size: .7em;
     
+    }
+    #positioning{
+        
+     margin-left:120px;
+    }
+
     img{
-        width: 440px;
+        width: 380px;
         height: 300px;
     }
 
-
-    .mainHead{
-        font-size:1em;
-    }
-
-    .grid{
-        margin-left:2%;
-    }
-    
 }
 
 
-@media(max-width:400px){      /*Reponsive design for smaller tablet and large smartphones   */
+@media(max-width:360px){      /*Reponsive design for smaller tablet and large smartphones   */
     
+    .introduction{
+
+        margin-left:20px; /*move to the left when screen is very small   */
+    }
+    
+     .mainHead{
+        font-size:.8em;
+    }
+
     img{
-        width: 340px;
+        width: 280px;
         height: 200px;
     }
 
 
-    .mainHead{
-        font-size:.8em;
-    }
+    #edit{
 
-    li{
-
-        color: black;
-        font-size:.8em;
-    }
-
+        font-size: .5em;
     
-    .grid{
-        margin-left:1%;
     }
 
 }
 
-
-@media(max-width:350px){      /*Reponsive design for smaller tablet and large smartphones   */
+@media(max-width:320px){      /*Reponsive design for smaller tablet and large smartphones   */
     
-    img{
-        width: 250px;
-        height: 120px;
+    .introduction{
+
+        margin-left:40px; /*move to the left when screen is very small   */
     }
-
-    .grid{
-        margin-left:0%;
-    }
-
-
-
+    
 }
+
+
+
 
