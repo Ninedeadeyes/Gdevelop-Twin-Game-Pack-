@@ -224,6 +224,10 @@ a:hover {
     .mainHead{
         font-size:1em;
     }
+
+    .grid{
+        margin-left:2%;
+    }
     
 }
 
@@ -245,17 +249,22 @@ a:hover {
         color: black;
         font-size:.8em;
     }
-    
+
 }
 
 
 @media(max-width:350px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
-        width: 280px;
-        height: 150px;
+        width: 250px;
+        height: 120px;
     }
 
-    
+    .grid{
+        margin-left:1%;
+    }
+
+
+
 }
 
