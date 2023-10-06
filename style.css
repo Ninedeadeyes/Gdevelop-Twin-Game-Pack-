@@ -11,16 +11,17 @@ li{
 
 body{
     margin:auto 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
     }
 
+
 img{
+
+        width: 800px;
+        height: 500px;
         border-radius:15px;
     }
 
-iframe{
-    border-radius:15px;
-}
 
 a:link {
     font-family: 'Maven Pro', sans-serif; 
@@ -148,6 +149,16 @@ a:hover {
     margin-left:50px;
 }
 
+#edit{
+    display: flex;
+    justify-content: center;
+    font-family: Cambria;
+    font-style:bold;
+
+    
+
+}
+
 
 @viewport {
   width: 100vw; /*Sets the width of the actual viewport to the device width*/
@@ -156,7 +167,7 @@ a:hover {
 @media(max-width:850px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
-        width: 480px;
+        width: 640px;
         height: 400px;
     }
 
@@ -205,14 +216,10 @@ a:hover {
 @media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
-        width: 380px;
+        width: 440px;
         height: 300px;
     }
 
-    iframe{
-        width: 380px;
-        height: 300px;
-    }
 
     .mainHead{
         font-size:1em;
@@ -224,12 +231,7 @@ a:hover {
 @media(max-width:400px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
-        width: 280px;
-        height: 200px;
-    }
-
-    iframe{
-        width: 280px;
+        width: 340px;
         height: 200px;
     }
 
@@ -243,6 +245,17 @@ a:hover {
         color: black;
         font-size:.8em;
     }
+    
+}
+
+
+@media(max-width:350px){      /*Reponsive design for smaller tablet and large smartphones   */
+    
+    img{
+        width: 280px;
+        height: 150px;
+    }
+
     
 }
 
