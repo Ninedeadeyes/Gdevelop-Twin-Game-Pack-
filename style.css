@@ -165,7 +165,9 @@ a:hover {
 }
 
 @media(max-width:850px){      /*Reponsive design for smaller tablet and large smartphones   */
-    
+    .grid{
+        margin-left:3%;
+    }
     img{
         width: 640px;
         height: 400px;
@@ -250,6 +252,11 @@ a:hover {
         font-size:.8em;
     }
 
+    
+    .grid{
+        margin-left:1%;
+    }
+
 }
 
 
@@ -261,7 +268,7 @@ a:hover {
     }
 
     .grid{
-        margin-left:1%;
+        margin-left:0%;
     }
 
 
