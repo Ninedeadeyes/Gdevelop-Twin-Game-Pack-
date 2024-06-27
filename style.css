@@ -95,6 +95,7 @@ a:hover {
     margin-left:4%;
     font-size: 1.2em;
     margin-bottom:120px;  /* because of footer   */
+
  
 
 }
@@ -152,10 +153,9 @@ a:hover {
 #edit{
     display: flex;
     justify-content: center;
-    font-family: Cambria;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style:bold;
-
-    
+    font-size: large;
 
 }
 
