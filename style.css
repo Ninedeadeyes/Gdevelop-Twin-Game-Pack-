@@ -1,8 +1,21 @@
 
-@font-face{        /* Has to be in the same folder as css code to work  */ 
+@font-face{     
+    
+                                                          /* Has to be in the same folder as css code to work  */ 
     src: url(fonts/BungeeInline-Regular.ttf);
     font-family:Bungee;
 }
+
+@font-face{     
+    
+                                                          /* Has to be in the same folder as css code to work  */ 
+    
+    src: url(fonts/gothbold.ttf);
+    font-family:goth;
+}
+
+
+
 
 li{
 
@@ -153,9 +166,9 @@ a:hover {
 #edit{
     display: flex;
     justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: goth;
     font-style:bold;
-    font-size: large;
+    font-size:x-large;
 
 }
 
