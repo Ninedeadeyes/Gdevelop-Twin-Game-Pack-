@@ -14,7 +14,9 @@
     font-family:goth;
 }
 
-
+.custom-delay {
+  animation-delay: 0.3s;
+}
 
 
 li{
@@ -47,61 +49,41 @@ a:hover {
     font-size: 1.2em;
     }
 
-
 .headContainer{
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  flex-wrap: nowrap; /* prevents nav from dropping below title */
-  padding: 0 1em;
-  background-image: linear-gradient(to right, rgb(178, 155, 221), white , rgb(153, 147, 233));
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  z-index: 2;
-  width: 100%;
-  border-radius: 5px;
-}           
-
+    display:flex;
+    position : fixed;   /*stays in the same place even if the page is scrolled */
+    background-image: linear-gradient(to right, rgb(178, 155, 221), white , rgb(153, 147, 233));
+    height: 80px;
+    align-items:center;    /*set the alignment of secondary axis (y) */ 
+    Z-index: 2;              /* everything hides behinder the header   */
+    top:0px;                /* so it is fixed to the sides of the page  */
+    left:0;
+    right:0;
+    justify-content: space-between;
+    width:100%;
+    border-radius:5px;               
+}
 
 .mainHead{
-  flex: 1 1 auto;
-  text-align: center;
-  font-size: clamp(1em, 4vw, 1.4em); /* scales with screen width */
-  max-width: 100%;
-  white-space: normal;
-  overflow-wrap: break-word;
-  margin: 0 auto;
-  font-family: Bungee;
-  text-decoration: underline;
-  color: black;
+    text-align: center;
+    color: black;
+    text-decoration-line: underline;
+    font-family: Bungee;
+    font-size:1.4em;
+    text-emphasis-color: white;  
 }
 
 .main-nav{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 0.5em;
-  flex-shrink: 0;
-  padding-right: 1em;
-  margin-left: auto; /* pushes it to the far right */
-}
-
-.link a {
-  display: inline-block;
-  min-width: 80px; /* or use max-content if you want natural width */
-  text-align: center;
+    display:flex;
+    list-style:none;
+    font-size:1em;
+    width:130px;
+    margin:5px;
 }
 
 .link{
     font-size:1.2em;
     margin-right: 10px;
-    color:rgb(93, 55, 121); 
 }
 
 .introduction{
@@ -122,7 +104,7 @@ a:hover {
     grid-column: 0/0;  
     grid-template-columns: repeat(auto-fill, minmax(1000px , 1fr));
     grid-row: 0/0;
-    gap:5em;
+    gap:120px;
     justify-items: center;     /* start,center,end x axis  */
     align-items:center;    /* start,center,end y axis strech=default  */
     margin-left:4%;
@@ -179,7 +161,9 @@ a:hover {
 }
 
 
-
+#positioning{
+    margin-left:50px;
+}
 
 #edit{
     display: flex;
@@ -196,13 +180,6 @@ a:hover {
 }
 
 @media(max-width:850px){      /*Reponsive design for smaller tablet and large smartphones   */
-
-  #edit {
-    font-size: 1.4em;
-  }
-
-
-
     .grid{
         margin-left:3%;
     }
@@ -219,6 +196,11 @@ a:hover {
     .introduction{
         font-size:.6em; 
 
+    }
+
+    #edit{
+
+        font-size:1.5em;
     }
 
     .mainHead{
@@ -254,17 +236,16 @@ a:hover {
 
 
 @media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
-
-
-  #edit {
-    font-size: 1.0em;
-  }
-
+    
     img{
         width: 440px;
         height: 300px;
     }
 
+    #edit{
+
+        font-size:1.0em;
+    }
 
     .mainHead{
         font-size:1em;
@@ -276,6 +257,7 @@ a:hover {
     
 }
 
+
 @media(max-width:400px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
@@ -283,10 +265,17 @@ a:hover {
         height: 200px;
     }
 
+
     .mainHead{
         font-size:.8em;
     }
 
+    #edit{
+
+        font-size:0.9em;
+    }
+
+    
     li{
 
         color: black;
@@ -300,13 +289,9 @@ a:hover {
 
 }
 
+
 @media(max-width:350px){      /*Reponsive design for smaller tablet and large smartphones   */
-
-      #edit {
-    font-size: 0.8em;
-     }
-
-
+    
     img{
         width: 250px;
         height: 120px;
@@ -316,5 +301,9 @@ a:hover {
         margin-left:0%;
     }
 
+
+
 }
+
+
 
