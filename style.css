@@ -54,6 +54,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   flex-wrap: nowrap; /* prevents nav from dropping below title */
   padding: 0 1em;
   background-image: linear-gradient(to right, rgb(178, 155, 221), white , rgb(153, 147, 233));
@@ -178,9 +179,7 @@ a:hover {
 }
 
 
-#positioning{
-    margin-left:0px;
-}
+
 
 #edit{
     display: flex;
@@ -277,14 +276,12 @@ a:hover {
     
 }
 
-
 @media(max-width:400px){      /*Reponsive design for smaller tablet and large smartphones   */
     
     img{
         width: 340px;
         height: 200px;
     }
-
 
     .mainHead{
         font-size:.8em;
@@ -303,7 +300,6 @@ a:hover {
 
 }
 
-
 @media(max-width:350px){      /*Reponsive design for smaller tablet and large smartphones   */
 
       #edit {
@@ -319,8 +315,6 @@ a:hover {
     .grid{
         margin-left:0%;
     }
-
-
 
 }
 
