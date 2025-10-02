@@ -51,6 +51,7 @@ a:hover {
 .headContainer{
 
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap; /* prevents nav from dropping below title */
@@ -322,5 +323,4 @@ a:hover {
 
 
 }
-
 
