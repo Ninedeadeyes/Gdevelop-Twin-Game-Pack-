@@ -47,41 +47,59 @@ a:hover {
     font-size: 1.2em;
     }
 
+
 .headContainer{
-    display:flex;
-    position : fixed;   /*stays in the same place even if the page is scrolled */
-    background-image: linear-gradient(to right, rgb(178, 155, 221), white , rgb(153, 147, 233));
-    height: 80px;
-    align-items:center;    /*set the alignment of secondary axis (y) */ 
-    Z-index: 2;              /* everything hides behinder the header   */
-    top:0px;                /* so it is fixed to the sides of the page  */
-    left:0;
-    right:0;
-    justify-content: space-between;
-    width:100%;
-    border-radius:5px;               
-}
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* prevents nav from dropping below title */
+  padding: 0 1em;
+  background-image: linear-gradient(to right, rgb(178, 155, 221), white , rgb(153, 147, 233));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 2;
+  width: 100%;
+  border-radius: 5px;
+}           
+
 
 .mainHead{
-    text-align: center;
-    color: black;
-    text-decoration-line: underline;
-    font-family: Bungee;
-    font-size:1.4em;
-    text-emphasis-color: white;  
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: clamp(1em, 4vw, 1.4em); /* scales with screen width */
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  margin: 0 auto;
+  font-family: Bungee;
+  text-decoration: underline;
+  color: black;
 }
 
 .main-nav{
-    display:flex;
-    list-style:none;
-    font-size:1em;
-    width:130px;
-    margin:5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+  flex-shrink: 0;
+  padding-right: 1em;
+  margin-left: auto; /* pushes it to the far right */
+}
+
+.link a {
+  display: inline-block;
+  min-width: 80px; /* or use max-content if you want natural width */
+  text-align: center;
 }
 
 .link{
     font-size:1.2em;
     margin-right: 10px;
+    color:rgb(93, 55, 121); 
 }
 
 .introduction{
@@ -178,6 +196,13 @@ a:hover {
 }
 
 @media(max-width:850px){      /*Reponsive design for smaller tablet and large smartphones   */
+
+  #edit {
+    font-size: 1.4em;
+  }
+
+
+
     .grid{
         margin-left:3%;
     }
@@ -229,7 +254,12 @@ a:hover {
 
 
 @media(max-width:600px){      /*Reponsive design for smaller tablet and large smartphones   */
-    
+
+
+  #edit {
+    font-size: 1.0em;
+  }
+
     img{
         width: 440px;
         height: 300px;
@@ -274,7 +304,12 @@ a:hover {
 
 
 @media(max-width:350px){      /*Reponsive design for smaller tablet and large smartphones   */
-    
+
+      #edit {
+    font-size: 0.8em;
+     }
+
+
     img{
         width: 250px;
         height: 120px;
